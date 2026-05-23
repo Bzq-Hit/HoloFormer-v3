@@ -6,7 +6,7 @@ Ziqi Bai, [Xianming Liu](https://homepage.hit.edu.cn/xmliu), [Cheng Guo](https:/
 
 Paper link:
 
-- Early Posting: [Optics Letters Early Posting](https://opg.optica.org/ol/upcoming.cfm/upcoming_pdf.cfm?id=586124)
+- https://opg.optica.org/ol/abstract.cfm?uri=ol-51-7-1776
 - DOI: 10.1364/OL.589365
 
 accepted by Optics Letters (OL)
