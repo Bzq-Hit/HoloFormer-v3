@@ -19,6 +19,61 @@ accepted by Optics Letters (OL)
 
 ---
 
+## Requirements
 
+- Python 3
+- PyTorch
+- CUDA-enabled GPU with more than 16 GB of memory
+
+---
+## Usage
+
+1. Prepare your hologram images in `.png` or `.jpg` format and place them in:
+   
+   ```bash
+   ./data/YOUR_DATA
+   ```
+2. Prepare the imaging-system parameters as a `.json` file. An example is provided at:
+   
+   ```bash
+   data/data_unlabel_cell/params.json
+   ```
+3. Modify `parse_task` in `utils/general.py` to load your own dataset, and set the reconstruction parameters in:
+   
+   ```bash
+   configs/sample.yaml
+   ```
+4. Run reconstruction with:
+   
+   ```bash
+   python main.py --task_config configs/sample.yaml
+   ```
+
+The reconstructed results will be saved in `./results`.
+
+---
+
+## Citation
+
+If you find HoloFormer v3 useful in your research, please consider citing:
+
+```
+@article{bai2026untrained,
+  title={Untrained physics-enhanced fully complex transformer for single-frame hologram reconstruction},
+  author={Bai, Ziqi and Liu, Xianming and Guo, Cheng and Jiang, Junjun and Ji, Xiangyang},
+  journal={Optics Letters},
+  volume={51},
+  number={7},
+  pages={1776--1779},
+  year={2026},
+  publisher={Optica Publishing Group}
+}
+```
+
+---
+
+## Acknowledgements
+
+This implementation builds upon the untrained framework provided by [yp000925/J-Net](https://github.com/yp000925/J-Net). We sincerely thank the authors for making their code publicly available.
 
 ---
