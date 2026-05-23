@@ -1,0 +1,9 @@
+TASK_NAME: 'data_unlabel_cell' # use your own data
+VERBOSE: False
+USE_REF: False
+PARAMS:
+  EVAL_PERIOD: 100
+  EPOCH: 5000
+  SCALE: [10,1,1]
+  LR: 1.0e-3
+

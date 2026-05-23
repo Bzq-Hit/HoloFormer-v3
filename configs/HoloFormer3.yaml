@@ -1,0 +1,44 @@
+# Training configuration
+GPU: [0,1]
+
+VERBOSE: False
+
+MODEL:
+  MODE: Holoformer_v3
+  PARAMS:
+      image_size: 512
+      in_chans: 1
+      dd_in: 1 
+      embed_dim: 8 
+      depths: [2, 2, 2, 2, 2, 2, 2, 2, 2] 
+      num_heads: [1, 2, 4, 8, 16, 16, 8, 4, 2]
+      win_size: 8
+      mlp_ratio: 4
+      qkv_bias: True
+      drop_rate: 0.
+      attn_drop_rate: 0.
+      drop_path_rate: 0.1
+      patch_norm: True
+      use_checkpoint: False
+      shift_flag: True
+      
+# Optimization arguments.
+OPTIM:
+  BATCH: 4
+  EPOCHS: 200
+  LR_INIT: 1.0e-3
+  LR_MIN: 1.0e-6
+
+MEASUREMENT:
+  prop_kernel:
+      wavelength: 532.3e-9
+      deltax: 1.12e-6
+      deltay: 1.12e-6
+      distance: 1.065e-3
+      nx: 512
+      ny: 512
+      pad_size: [512,512]
+
+  noise:
+    name: gaussian
+    sigma: 0.05
