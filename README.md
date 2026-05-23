@@ -20,6 +20,5 @@ accepted by Optics Letters (OL)
 ---
 
 
-The code is currently being prepared and will be released soon.
 
 ---
